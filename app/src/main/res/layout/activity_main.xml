@@ -7,11 +7,10 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This is Main Fragment"
+        android:text="@string/this_is_main_fragment"
         android:textColor="@color/white"
         android:textStyle="normal"
         android:textSize="22sp"
@@ -23,22 +22,9 @@
         android:id="@+id/bottomSheetContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/bottom_sheet_bg"
         android:layout_gravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent">
-
-        <androidx.appcompat.widget.LinearLayoutCompat
-            android:id="@+id/bottom_sheet_layout"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@drawable/bottom_sheet_bg"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent">
-
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -48,24 +34,18 @@
                     android:padding="18dp"
                     android:text="Server List"
                     android:textColor="@color/white"
-                    android:textSize="24sp" />
-
-                <ImageView
-                    android:id="@+id/bottom_refresh"
-                    android:layout_width="wrap_content"
-                    android:layout_height="25dp"
-                    android:layout_weight="1"
-                    android:visibility="gone"
-                    app:srcCompat="@drawable/refresh_icon" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
+                    android:textSize="24sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/white" />
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
-        </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

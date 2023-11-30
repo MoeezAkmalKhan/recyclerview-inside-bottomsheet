@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BottomSheetFragmant</string>
+    <string name="this_is_main_fragment">This is Main Fragment</string>
 </resources>
